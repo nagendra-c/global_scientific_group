@@ -1,0 +1,40 @@
+.countdown-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(90deg, #0b3c47, #0e5a66);
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  background: #ffffff;
+  color: #0b3c47;
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.event-info {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+}

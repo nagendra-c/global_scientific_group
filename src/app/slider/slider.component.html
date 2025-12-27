@@ -1,0 +1,41 @@
+ <div class="hero-slider">
+
+  <div
+    class="slide"
+    *ngFor="let slide of slides; let i = index"
+    [class.active]="i === activeIndex"
+  >
+    <div
+      class="slide-bg"
+      [ngStyle]="{
+        'background-image':
+          'linear-gradient(110deg, rgba(6,32,39,0.95) 45%, rgba(6,32,39,0.6) 60%, transparent 70%), url(' + slide.image + ')'
+      }"
+    ></div>
+
+    <div class="slide-content">
+      <span class="badge">{{ slide.badge }}</span>
+
+      <h1>
+        {{ slide.titleMain }}<br />
+        <span class="highlight">{{ slide.highlight }}</span>
+        <span class="thin">{{ slide.thin }}</span>
+      </h1>
+
+      <button class="cta-btn">
+        Reserve My Seat <span>→</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Dots -->
+  <div class="slider-dots">
+    <span
+      class="dot"
+      *ngFor="let slide of slides; let i = index"
+      [class.active]="i === activeIndex"
+      (click)="setSlide(i)"
+    ></span>
+  </div>
+
+</div>
