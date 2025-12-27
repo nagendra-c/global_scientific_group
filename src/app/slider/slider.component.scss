@@ -108,6 +108,43 @@ span.highlight{
     display: inline-block;
 }
 
+/* Slide countdown bar */
+.slide-countdown {
+  margin-left: 250px;
+  position: absolute;
+  /* align under hero content (start from slide-content padding-left) */
+  left: 8%;
+  bottom: 48px;
+  z-index: 30;
+  width: 620px;
+  max-width: 64%;
+  display: flex;
+  justify-content: flex-start;
+  pointer-events: auto;
+}
+
+.slide-countdown-inner {
+  background: rgba(7,49,53,0.9);
+  padding: 12px 18px;
+  border-radius: 12px;
+  box-shadow: 0 18px 40px rgba(2,12,15,0.6);
+  border: 8px solid rgba(2,18,20,0.18);
+}
+
+@media (min-width: 1400px) {
+  .slide-countdown { left: 9%; width: 820px; }
+}
+
+@media (max-width: 1100px) {
+  .slide-countdown { left: 6%; bottom: 56px; width: 580px; max-width: 72%; }
+  .slide-countdown-inner { padding: 10px 14px; }
+}
+
+@media (max-width: 768px) {
+  .slide-countdown { position: static; width: 100%; margin: 18px 0 0 0; }
+  .slide-countdown-inner { width: 100%; padding: 12px; border-radius: 10px; border-width: 4px; }
+}
+
 .dot {
   width: 12px;
   height: 12px;

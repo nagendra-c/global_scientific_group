@@ -1,5 +1,4 @@
  <div class="hero-slider">
-
   <div
     class="slide"
     *ngFor="let slide of slides; let i = index"
@@ -25,6 +24,8 @@
       <button class="cta-btn">
         Reserve My Seat <span>→</span>
       </button>
+      
+    
     </div>
   </div>
 
@@ -37,5 +38,10 @@
       (click)="setSlide(i)"
     ></span>
   </div>
-
+  <!-- Countdown bar (appears on each slide) -->
+      <div class="slide-countdown">
+        <div class="slide-countdown-inner">
+          <app-count-down [targetDate]="conferenceDate"></app-count-down>
+        </div>
+      </div>
 </div>
