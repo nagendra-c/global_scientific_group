@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class SliderComponent {
   // target date for countdown (used across slides)
-  conferenceDate = '2026-01-30T18:00:00';
+  conferenceDate = '2026-04-26T18:00:00';
    slides = [
     {
       badge: 'Lead Purpose, Innovate with Passion',
