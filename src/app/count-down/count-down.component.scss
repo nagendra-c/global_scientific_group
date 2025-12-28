@@ -58,3 +58,100 @@
   align-items: center;
   gap: 4px;
 }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .countdown-container {
+    gap: 10px;
+  }
+
+  .time-box {
+    width: 90px;
+    min-width: 90px;
+    height: 80px;
+  }
+
+  .number {
+    font-size: 26px;
+  }
+
+  .label {
+    font-size: 10px;
+  }
+
+  .event-info {
+    font-size: 12px;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .countdown-container {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .time-box {
+    width: 80px;
+    min-width: 80px;
+    height: 75px;
+  }
+
+  .number {
+    font-size: 24px;
+  }
+
+  .label {
+    font-size: 10px;
+  }
+
+  .event-info {
+    width: 100%;
+    flex-direction: row;
+    margin-left: 0;
+    font-size: 12px;
+    gap: 12px;
+    white-space: normal;
+  }
+
+  .event-date,
+  .event-location {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .time-box {
+    width: 70px;
+    min-width: 70px;
+    height: 70px;
+  }
+
+  .number {
+    font-size: 20px;
+  }
+
+  .label {
+    font-size: 9px;
+    margin-top: 2px;
+  }
+
+  .event-info {
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    margin-left: 0;
+    font-size: 11px;
+  }
+
+  .event-date,
+  .event-location {
+    justify-content: center;
+  }
+}
