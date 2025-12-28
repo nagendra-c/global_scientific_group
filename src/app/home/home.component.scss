@@ -810,6 +810,163 @@
   background: #1cc9ff;
 }
 
+/* ================= TESTIMONIALS RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .testimonials-section {
+    padding: 60px 20px;
+  }
+
+  .testimonial-slider {
+    margin: 40px auto;
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    min-width: 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 50px 15px;
+  }
+
+  .testimonial-slider {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    overflow-x: visible;
+    margin: 30px auto;
+    max-width: 100%;
+  }
+
+  .testimonial-card {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .testimonial-card img {
+    height: 200px;
+  }
+
+  .testimonial-info {
+    padding: 12px;
+  }
+
+  .testimonial-info h4 {
+    font-size: 14px;
+  }
+
+  .testimonial-info p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonials-section {
+    padding: 40px 12px;
+  }
+
+  .testimonial-slider {
+    display: block;
+    overflow-x: hidden;
+    margin: 25px auto;
+    padding: 0;
+  }
+
+  .testimonial-card {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 14px;
+  }
+
+  .testimonial-card img {
+    height: 180px;
+  }
+
+  .testimonial-info {
+    padding: 12px;
+  }
+
+  .slider-controls {
+    margin-top: 14px;
+  }
+
+  .slider-controls .dot {
+    width: 18px;
+    height: 3px;
+    margin: 0 3px;
+  }
+
+  .slider-controls img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-section {
+    padding: 35px 12px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .testimonial-slider {
+    display: block;
+    overflow-x: hidden;
+    white-space: normal;
+    margin: 20px auto;
+    padding: 0;
+  }
+
+  .testimonial-card {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+  }
+
+  .testimonial-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+
+  .testimonial-info {
+    padding: 10px;
+  }
+
+  .testimonial-info h4 {
+    font-size: 13px;
+    margin: 6px 0;
+  }
+
+  .testimonial-info p {
+    font-size: 10px;
+  }
+
+  .slider-controls {
+    margin-top: 12px;
+  }
+
+  .slider-controls .dot {
+    width: 16px;
+    height: 2px;
+    margin: 0 2px;
+  }
+
+  .slider-controls img {
+    width: 14px;
+    height: 14px;
+  }
+}
+
 
 
 /* ================= GALLERY ================= */
